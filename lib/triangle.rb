@@ -11,9 +11,9 @@ class Triangle
   def kind
     if !(@base + @height > @hypotenuse) || !(@height + @hypotenuse > @base) || !(@hypotenuse + @base > @height)
         raise TriangleError
-      elsif (@base == @height) && (@height == @hypotenuse)
+    elsif (@base == @height) && (@height == @hypotenuse)
         return :equilateral
-      elsif (@height == @hypotenuse) || (@base == @height)||  (@hypotenuse == @base)
+    elsif (@height == @hypotenuse) || (@base == @height) ||       (@hypotenuse == @base)
         return :isosceles
     else
       return :scalene
