@@ -13,7 +13,9 @@ class Triangle
         raise TriangleError
       elsif (@base == @height) && (@height == @hypotenuse)
         return :equilateral
-      elsif (@height )
+      elsif (@height == @hypotenuse) && !(@base)
+        return :isosceles
+      
       end
   end
 end
