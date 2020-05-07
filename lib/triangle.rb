@@ -11,7 +11,8 @@ class Triangle
   def kind
     if !(@base + @height > @hypotenuse) || !(@height + @hypotenuse > @base) || !(@hypotenuse + @base > @height)
         raise TriangleError
-    elsif @base
+    elsif (@base == @height) && (@height == @hypotenuse)
+      return 
         
       end
   end
