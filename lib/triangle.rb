@@ -15,7 +15,8 @@ class Triangle
         return :equilateral
       elsif (@height == @hypotenuse) && !(@base)
         return :isosceles
-      
+    else
+      return :scalene
       end
   end
 end
